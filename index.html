@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Spotify</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-wraper">
+
+            <div class="sidebar__logo">
+                <img src="img/logo.png">
+            </div><!--sidebar-logo-->
+
+            <div class="sidebar__menu">
+
+                <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i> Início</a>
+                <a href="#"><i class="fas fa-search"></i> Buscar</a>
+                <a href="#"><i class="fas fa-database"></i> Biblioteca</a>
+
+            </div> <!--sidebar-menu-->
+
+            <div class="sidebar__menu">
+                
+                <p class="sidebar__menu__title">Playlists</p>
+                
+                <div class="sidebar__menu__item">
+                    <div class="sidebar__menu__item__componente">
+                        <span style="font-size: 20px;">+</span>
+                    </div>
+                    <span>Criar Playlist</span>
+                </div><!--sidebar-menu-item-->
+
+                <div class="sidebar__menu__item">
+                    <img src="img/musicas_curtidas.png">
+                    <span>Músicas Curtidas</span>
+                </div><!--sidebar-menu-item-->
+
+            </div> <!--sidebar-menu-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div> <!--sidebar-playlists-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div> <!--sidebar-playlists-->
+
+            <div class="sidebar__playlists">
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+                <a href="">Playlist 1</a>
+            </div> <!--sidebar-playlists-->
+
+
+        </div><!--wraper-->
+
+    </div><!--sidebar-->
+
+
+    <div class="main">
+        <div class="main-wraper">
+            
+            <div class="main__row">
+                <div class="main__row__title"><h2>Paradas</h2></div>
+
+                <div class="main__col">
+                    <img src="img/top50.png">
+                    <h3>As 50 mais tocada Brasil</h3>
+                    <p>Só vai ter lixo</p>
+                </div><!--main-col-->
+
+                <div class="main__col">
+                    <img src="img/top50global.png">
+                    <h3>As 50 mais tocada Global</h3>
+                    <p>Umas legalzinha até, mas a maioria é lixo</p>
+                </div><!--main-col-->
+
+            </div><!--main-row-->
+
+            <div class="main__row">
+                <div class="main__row__title"><h2>Mais do que você curte</h2></div>
+
+                <div class="main__col">
+                    <img src="img/1.jpg">
+                    <h3>Luiz Miguel</h3>
+                    <p>O melhor músico do Brasil</p>
+                </div><!--main-col-->
+
+                <div class="main__col">
+                    <img src="img/2.jpg">
+                    <h3>AC/DC</h3>
+                    <p>Angus Young toca demais</p>
+                </div><!--main-col-->
+
+                <div class="main__col">
+                    <img src="img/3.jpg">
+                    <h3>Rock Forever</h3>
+                    <p>Rock para sempre</p>
+                </div><!--main-col-->
+
+                <div class="main__col">
+                    <img src="img/6.jpg">
+                    <h3>Grunge Forever</h3>
+                    <p>Nirvana, Alice in Chains, Pearl Jam...</p>
+                </div><!--main-col-->
+
+                <div class="main__col">
+                    <img src="img/7.jpg">
+                    <h3>Old School Metal</h3>
+                    <p>Só as brabas</p>
+                </div><!--main-col-->
+
+            </div><!--main-row-->
+
+
+            <div class="main__row">
+                <div class="main__row__title"><h2>Minhas músicas</h2></div>
+
+                <div class="main__col" data-image="img/IA_nirvana.png" data-artist="I.A. Nirvana" data-song="Drowned in the Sun" data-file="assets/nirvana.mp3">
+                    <img src="img/IA_nirvana.png">
+                    <h3>I.A. Nirvana</h3>
+                    <p>Drowned in the Sun</p>
+                </div><!--main-col-->
+
+                <div class="main__col" data-image="img/gunsrools.png" data-artist="Guns N Roses" data-song="Sweet Child Of Mine" data-file="assets/guns.mp3">
+                    <img src="img/gunsrools.png">
+                    <h3>Guns N Roses</h3>
+                    <p>Sweet Child Of Mine</p>
+                </div><!--main-col-->
+
+            </div><!--main-row-->
+
+
+
+        </div><!--main-wraper-->
+    </div>
+
+    <div class="player">
+        <div class="player__artist">
+
+        </div>
+        <div class="player__control">
+            <div class="player__control__buttons">
+                <a href=""><i class="fas fa-backward"></i></a>
+                <a id="playBtn" href="#"><i class="far fa-play-circle"></i></a>
+                <a style="display: none;" id="pauseBtn" href="#"><i class="far fa-pause-circle"></i></a>
+                <a href=""><i class="fas fa-forward"></i></a>
+
+            </div>
+
+            <div class="player__control__progress">
+                <div style="width: 0%;"  class="player__control__progress_2"></div>
+            </div>
+
+
+        </div>
+    </div><!--player-->
+
+    <audio id="audioplayer" style="position: absolute; left: 0;top: 0; z-index: -999; opacity: 0;" controls="">
+
+    </audio>
+
+    <script src="js/all.min.js"></script>
+
+    <script>
+
+        var audioPlayer = document.getElementById('audioplayer');
+        var loaded = false;
+        var playBtn = document.getElementById('playBtn');
+        var pauseBtn = document.getElementById('pauseBtn');
+
+        pauseBtn.addEventListener('click', (e) =>{
+            e.preventDefault();
+
+            playBtn.style.display = "inline";
+            pauseBtn.style.display = "none";
+            audioPlayer.pause();
+
+            return false;
+        });
+
+        playBtn.addEventListener('click', (e) =>{
+            e.preventDefault();
+
+            playBtn.style.display = "none";
+            pauseBtn.style.display = "inline";
+            audioPlayer.play();
+
+            return false;
+        });
+
+
+        const playSong = (file) => {
+
+            if(loaded == false){
+                audioPlayer.innerHTML = `<source src="`+file+`" type="audio/mp3" />`
+                loaded = true;
+            }
+
+            audioPlayer.play();
+        
+            playBtn.style.display = "none"
+            pauseBtn.style.display = "inline"
+
+        }
+
+
+        document.querySelectorAll('.main__col').forEach(item =>{
+
+            item.addEventListener('click', event=>{
+                let image = item.getAttribute('data-image');
+                let artist = item.getAttribute('data-artist');
+                let song = item.getAttribute('data-song');
+                let file = item.getAttribute('data-file');
+
+                let playerArtistComponent = document.getElementsByClassName('player__artist');
+
+                playerArtistComponent[0].innerHTML = `
+                    <img src="`+image+`" />
+                    <h3>`+artist+`<br/><span>`+song+`</span></h3>
+                `;
+                playSong(file);
+
+        
+            });
+
+        });
+
+    </script>
+</body>
+</html>
